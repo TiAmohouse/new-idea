@@ -140,15 +140,14 @@
         }
 
         .diary-card {
-            background: rgba(255,255,255,0.68);
-            backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px);
-            border: 1px solid rgba(255,255,255,0.35);
+            background: transparent;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+            border: none;
             border-radius: 20px;
-            padding: 26px 24px;
+            padding: 22px 24px;
             margin-bottom: 20px;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.03);
-            transition: transform 0.25s, box-shadow 0.3s;
+            transition: transform 0.25s;
         }
         .diary-card:hover {
             transform: translateY(-3px);
@@ -187,7 +186,7 @@
         .card-footer {
             margin-top: 12px;
             padding-top: 10px;
-            border-top: 1px dashed rgba(180,140,150,0.18);
+            border-top: 1px dashed rgba(180,140,150,0.15);
             font-size: 0.76em;
             color: #c8a8b8;
             display: flex;
