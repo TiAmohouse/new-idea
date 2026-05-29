@@ -34,17 +34,26 @@
             pointer-events: none;
         }
 
-        .sanhua-bg svg {
-            width: min(92vw, 750px);
-            height: auto;
-            opacity: 0.22;
+        .sanhua-bg .bg-image-wrapper {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .sanhua-bg img {
+            height: 90vh;
+            max-width: 100%;
+            object-fit: contain;
+            opacity: 0.4;
             transition: opacity 0.6s;
+            filter: drop-shadow(0 0 40px rgba(200,150,200,0.15));
         }
         @media (min-width: 900px) {
-            .sanhua-bg svg { opacity: 0.28; }
+            .sanhua-bg img { opacity: 0.45; }
         }
         @media (max-width: 600px) {
-            .sanhua-bg svg { width: 96vw; opacity: 0.18; }
+            .sanhua-bg img { height: 70vh; opacity: 0.35; }
         }
 
         /* 光晕 */
@@ -260,7 +269,9 @@
 
     <!-- 三花背景 — 大橘给我的猫娘图片！ -->
     <div class="sanhua-bg">
-        <img src="assets/sanhua-bg.jpg" alt="三花" style="width:100%;height:100%;object-fit:cover;">
+        <div class="bg-image-wrapper">
+            <img src="assets/sanhua-bg.jpg" alt="三花">
+        </div>
     </div>
 
     <header>
